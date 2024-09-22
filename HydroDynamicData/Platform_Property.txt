@@ -1,0 +1,4 @@
+7.46633E+06   PtfmMass    - Platform mass (kg)
+4.22923E+09   PtfmRIner   - Platform inertia for roll tilt rotation about the platform CM (kg m^2)
+4.22923E+09   PtfmPIner   - Platform inertia for pitch tilt rotation about the platform CM (kg m^2)
+ 1.6423E+08   PtfmYIner   - Platform inertia for yaw rotation about the platform CM (kg m^2)
