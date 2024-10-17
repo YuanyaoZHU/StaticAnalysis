@@ -1,0 +1,7 @@
+61.5			- m, Length (w.r.t Root Along Preconed Axis)
+4.54			- %, Mass Scaling Factor
+17740		- kg, Overall (Integrated) Mass
+11776047 	- kg*m2, Second Mass Moment of Inertia (w.r.t Root)
+363231		- kg*m, First Mass Moment of Inertia (w.r.t. Root)
+20.475		- m, CM Location (w.r.t. Root along Preconed Axis) 
+0.48			- %, Structural-Damping Ratio (All modes)
