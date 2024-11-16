@@ -10,7 +10,9 @@ DataIn = textscan(fileID,repmat('%f',[1,5]),'CollectOutput',1);
 fclose(fileID);
 Data = DataIn{1,1};
 
-M0 = load("..\HydroDynamicData\mass.txt")*1; % 相对平台自身质心的质量矩阵, mass.txt为平台质量矩阵，mass_total.txt为整体质量矩阵
+% Mass load
+
+M_platform = load("..\HydroDynamicData\mass.txt")*1; % 相对平台自身质心的质量矩阵, mass.txt为平台质量矩阵，mass_total.txt为整体质量矩阵
 M_total = load("..\HydroDynamicData\mass_total.txt");
 C0 = load("..\HydroDynamicData\Spar.hst"); % 读取静水回复力参数
 C_mooring = load("..\HydroDynamicData\mooring_force.txt");
@@ -22,7 +24,7 @@ xg = MC_platform(1); % 质心x坐标
 yg = MC_platform(2); % 质心y坐标
 zg = MC_platform(3); % 质心z坐标
 
-M_platform = Inertial_Process(M0,MC_platform); % 运用移轴定理将参考点移到水线面中心处
+M_platform = Inertial_Process(M_platform,MC_platform); % 运用移轴定理将参考点移到水线面中心处
 m_platform = M_platform(1,1);
 g = 9.81;
 
